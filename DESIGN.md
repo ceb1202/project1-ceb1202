@@ -38,19 +38,16 @@
 - **Assumptions**: We assume that the year has 365 days (we ignore leap years)
 
 ### Algorithmic Steps
-
-seconds = input("Enter a number of seconds and I'll tell you how many years that is ")
-seconds = int(seconds)
-minutes = seconds / 60
-hours = minutes / 60
-days = hours / 24
-months = days / 30.42
-years = days /365 
-
-print(seconds, "seconds is ", years, "years")
-print(seconds, "seconds is ", months, "months")
-print(seconds, "seconds is ", days, "days")
-print(seconds, "seconds is ", minutes, "minutes")
+- Get number of seconds from user (it's a string) in variable `seconds_str`
+- Find the number of minutes in `seconds` and store in `minutes`
+| - Divide `seconds` by 60
+- Find the number of hours in `hours` in `minutes` and store in `hours`
+| - Divide `minutes` by 60
+- Find the number of days in `days` in `hours` and store in `days`
+| - Divide `hours` by 24
+- Find the number of years in `years` in `days` and store in `years`
+| - Divide `days` by 365
+- Print out the years corresponding to the number of seconds.
 
 ## Question 3
 - **Input**: Get the number of seconds from the user.
@@ -65,5 +62,17 @@ print(seconds, "seconds is ", minutes, "minutes")
 
 ### Algorithmic Steps
 
+seconds = input("Enter a number of seconds and I'll tell you how many years that is ")
+seconds = int(seconds)
+minutes = seconds / 60
+hours = minutes / 60
+days = hours / 24
+months = days / 30.42
+years = days /365 
+
+print(seconds, "seconds is ", years, "years")
+print(seconds, "seconds is ", months, "months")
+print(seconds, "seconds is ", days, "days")
+print(seconds, "seconds is ", minutes, "minutes")
 
 
